@@ -1,16 +1,12 @@
 import toast, { Toaster } from "react-hot-toast";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
 import ContactForm from "../components/ContactForm/ContactForm";
 import ContactList from "../components/ContactList/ContactList";
 import SearchBox from "../components/SearchBox/SearchBox";
-// import { selectError, selectLoading } from "../redux/contacts/slice";
-import { useDispatch } from "react-redux";
-import { useEffect } from "react";
 import { fetchContacts } from "../redux/contacts/operations";
 
 export default function Contacts() {
-  // const loading = useSelector(selectLoading);
-  // const error = useSelector(selectError);
-
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -27,8 +23,6 @@ export default function Contacts() {
       <h1>Your contacts</h1>
       <ContactForm />
       <SearchBox />
-      {/* {loading && <p>Loading...</p>}
-      {error && <p>Something went wrong! Please try again.</p>} */}
       <ContactList />
       <Toaster position="top-center" reverseOrder={false} />
     </div>
