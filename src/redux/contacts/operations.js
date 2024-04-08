@@ -9,7 +9,6 @@ export const fetchContacts = createAsyncThunk(
       return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e);
-      //   console.log(e);
     }
   }
 );
@@ -22,7 +21,6 @@ export const addContact = createAsyncThunk(
       return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e);
-      //   console.log(e);
     }
   }
 );
