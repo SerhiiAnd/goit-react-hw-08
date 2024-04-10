@@ -1,3 +1,4 @@
+
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
 import { Link } from "react-router-dom";
@@ -10,6 +11,7 @@ export default function RegistrationForm() {
     dispatch(register(values));
     actions.resetForm();
   };
+
   return (
     <div className={css.div}>
       <Formik
@@ -28,19 +30,25 @@ export default function RegistrationForm() {
               name="name"
               placeholder="Name"
               className={css.field}
-            ></Field>
+            />
           </label>
           <label className={css.label}>
             Email
-            <Field className={css.field} type="email" name="email"></Field>
+            <Field
+              type="email"
+              name="email"
+              placeholder="Email"
+              className={css.field}
+            />
           </label>
           <label className={css.label}>
             Password
             <Field
-              className={css.field}
               type="password"
               name="password"
-            ></Field>
+              placeholder="Password (minimum 8 characters)"
+              className={css.field}
+            />
           </label>
           <button type="submit" className={css.button}>
             Register

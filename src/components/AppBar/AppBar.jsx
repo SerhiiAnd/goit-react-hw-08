@@ -12,7 +12,7 @@ export default function AppBar() {
       <h1 className={css.title}>Phonebook</h1>
       <div className={css.div}>
         <Navigation className={css.link}></Navigation>
-        {isLoggedIn ? <UserMenu></UserMenu> : <AuthNav></AuthNav>}
+        {isLoggedIn ? <UserMenu> </UserMenu> : <AuthNav> </AuthNav>}
       </div>
     </div>
   );
