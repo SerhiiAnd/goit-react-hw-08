@@ -1,32 +1,15 @@
-/* .div {
-  display: flex;
-  justify-content: center;
-}
-
-.navLink {
-  margin-right: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  margin: 0 10px;
-}
-
-.active {
-  color: #007bff; 
-} */
-
 .div {
   display: flex;
   gap: 10px;
 }
 
 .navLink {
-  margin-right: 10px; /* Встановлюємо пробіл між посиланнями */
+  margin-right: 10px;
   text-decoration: none;
   color: #333;
   font-weight: bold;
 }
 
 .active {
-  color: #007bff; /* Колір активного посилання */
+  color: #007bff;
 }

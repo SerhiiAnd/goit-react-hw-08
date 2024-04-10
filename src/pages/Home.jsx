@@ -1,7 +1,9 @@
 export default function Home() {
   return (
     <div>
-      <h1>Welcome manager contacts list! 📞</h1>
+      <h1>
+        This is a contact manager. Please register or log in. Welcome aboard! 🚀
+      </h1>
     </div>
   );
 }
